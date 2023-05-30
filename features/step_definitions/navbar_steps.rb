@@ -1,43 +1,36 @@
 Given('I go to the homepage') do
-    pending # Write code here that turns the phrase above into concrete actions
+    visit('/')
   end
   
-  Then('I see the Navbar') do
-    pending # Write code here that turns the phrase above into concrete actions
-  end
+Then('I should see the Navbar') do
+    expect(page).to have_content "#Navbar"
+end
   
-  When('I click on the Logo') do
+When('I click on the Logo') do
     pending # Write code here that turns the phrase above into concrete actions
-  end
+end
   
-  Then('I should be on the homepage') do
+Then('I should be on the homepage') do
     pending # Write code here that turns the phrase above into concrete actions
-  end
+end
   
-  When('I click on the {string} button') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
-  end
+When('I click on the {string} button') do |string|
+    click_button string
+end
   
-  Then('I should be on the {string} page') do |string|
+Then('I should be on the {string} page') do |string|
     pending # Write code here that turns the phrase above into concrete actions
-  end
+end
+ 
+Then('I should be on the {string} index page') do |string|
+    pending # Write code here that turns the phrase above into concrete actions
+end
   
-  Then('I should be on the {string} index page') do |string|
+When('I hover on the {string} button') do |string|
     pending # Write code here that turns the phrase above into concrete actions
-  end
+    find(string).hover
+end
   
-  Then('I should see the Navbar') do
-    pending # Write code here that turns the phrase above into concrete actions
-  end
-  
-  When('I hover on the {string} button') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
-  end
-  
-  Then('I should see a button for {string}') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
-  end
-  
-  When('Click on the button for {string}') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
-  end
+Then('I should see a button for {string}') do |string|
+    expect(page).to have_content string
+end

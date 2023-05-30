@@ -6,23 +6,23 @@ Feature: Navbar Usage
         Given I go to the homepage 
 
     Scenario: Navbar Visible
-        Then I see the Navbar
+        Then I should see the Navbar
 
     Scenario: Clicking on the Logo
         When I click on the Logo
         Then I should be on the homepage
-        And I see the Navbar
+        And I should see the Navbar
 
     Scenario: Clicking on the Corporate Profile
         When I click on the "Corporate Profile" button
         Then I should be on the "Corporate Profile" page
-        And I see the Navbar
+        And I should see the Navbar
 
     Scenario: Clicking on the Logo
         When I click on the "Corporate Profile" button
         And I click on the Logo
         Then I should be on the homepage
-        And I see the Navbar
+        And I should see the Navbar
 
     Scenario: Clicking on the Employees button
         When I click on the "Employees" button
@@ -37,6 +37,6 @@ Feature: Navbar Usage
 
     Scenario: Clicking on Dropdown buttons
         When I hover on the "Employees" button
-        And Click on the button for "Patrick Lehrmann"
+        And Click on the "Patrick Lehrmann" button
         Then I should be on the "Patrick Lehrmann" page
         And I should see the Navbar

@@ -1,9 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+Website for Advantage Geophysics 
 
 ruby "3.2.2"
 
@@ -13,6 +10,10 @@ Testing Docs
 rspec Doc : http://rspec.info/
 Cucumber Doc : https://cucumber.io/docs/cucumber/
 Capybara Doc : https://github.com/teamcapybara/capybara
+Shakapacker Doc : https://github.com/shakacode/shakapacker/tree/6-stable
+
+Bootstrap Doc: https://getbootstrap.com/docs/5.0/getting-started/introduction/
+Bootswatch Setup Doc : https://human-se.github.io/rails-demos-n-deets-2020/demo-bootstrap-setup/
 
 # Possible additions: 
 gem 'figaro' gem 'date-validator' 
