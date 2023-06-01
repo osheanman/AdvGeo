@@ -1,2 +1,16 @@
 %h1 Employees#show
 %p Find me in app/views/employees/show.html.haml
+
+.row.mt-2
+    .col-12.col-md-6.offset-md-3.col-xl-4.offset-xl-4
+        %h3.text-center= @employee.name
+        .card-body
+            .card-text
+                %dl.row
+                    %dt.col-sm-3.text-md-right Title:
+                    %dt.col-sm-9
+                        = @employee.title
+                %dl.row
+                    %dt.col-sm-3.text-md-right Title:
+                    %dt.col-sm-9
+                        = @employee.title

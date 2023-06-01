@@ -1,2 +1,21 @@
 %h1 Employees#index
 %p Find me in app/views/employees/index.html.haml
+
+.row
+    .col-12.col-md-10.offset-md-1
+        %h1.text-center Employees
+        .table-responsive-md
+            %table.table.table-striped.table-hover#employees
+                %caption Table of Employees
+                %thead.thead-dark
+                    %tr
+                        %th Name
+                        %th Title
+                        %th Description 
+                %tbody
+                    - @employees.each_with_index do |employee, index|
+                        %tr
+                            %td= index + 1
+                            %td= employee.name
+                            %td= employee.title
+                            %td= employee.description
