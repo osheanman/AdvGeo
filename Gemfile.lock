@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/thomaspark/bootswatch.git
+  revision: 45823d06518d1472faef5b46b9771dd7e63a4930
+  specs:
+    bootswatch (5.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -307,6 +313,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   bootstrap (~> 5.2)
+  bootswatch!
   capybara
   cucumber-rails
   database_cleaner

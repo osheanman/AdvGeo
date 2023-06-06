@@ -1,0 +1,16 @@
+// A Bootswatch Cosmo navbar
+// https://bootswatch.com/cosmo/
+
+%nav.navbar.navbar-expand-lg.navbar-dark.bg-primary#navbar
+    .container-fluid
+        %a.navbar-brand{ href: root_path.to_s } Advantage Geophysics
+        %button.navbar-toggler{ 'aria-controls': 'navbar-links-container', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation', 'data-target': '#navbar-links-container', 'data-toggle': 'collapse', type: 'button' }
+            %span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbar-links-container
+            %ul.navbar-nav.me-auto
+                - ApplicationHelper.nav_items.each do |item|
+                    %li.nav-item.py-1.text-center{ class: ApplicationHelper.active(controller_name, item[:link]) }
+                        %a.nav-link.text-white{ href: item[:link].to_s }
+                            = item[:title]
+                            - if current_page? item[:link]
+                                %span.visually-hidden (current)

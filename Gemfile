@@ -78,4 +78,6 @@ gem "haml-rails", "~> 2.1"
 
 gem "bootstrap", "~> 5.2"
 
+gem "bootswatch", github: "thomaspark/bootswatch"
+
 gem "jquery-rails", "~> 4.5"

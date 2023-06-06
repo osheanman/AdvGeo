@@ -13,4 +13,14 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap";
+
+ /* Current Bootswatch Theme: Pulse */
+@import "pulse/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "pulse/bootswatch";
+
+body {
+    background-color: #fff;
+    color: #333;
+    margin: 33px;
+  }

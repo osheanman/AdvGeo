@@ -1,2 +1,21 @@
 module ApplicationHelper
+    def self.nav_items
+        [
+            {
+                title: 'Home',
+                link:  Rails.application.routes.url_helpers.root_path
+            },
+            {
+                title: 'Employees',
+                link:  Rails.application.routes.url_helpers.employees_index_path
+            }
+        ]
+    end
+
+    def self.active(curr_controller_name, nav_link)
+        nav_controller = Rails.application.routes.recognize_path(nav_link, method: :get)[:controller]
+        return 'bg-primary-active' if curr_controller_name == nav_controller
+
+        ''
+    end
 end
