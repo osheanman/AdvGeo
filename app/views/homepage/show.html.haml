@@ -2,6 +2,23 @@
     .col-12
         %section.mt-4
             %h2.text-center Advantage Geophysics Inc.
+            
+            .carousel.slide#carouselExampleAutoplaying
+                .carousel-inner
+                    .carousel-item.active
+                        %img.d-block.w-100{src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Example_image.svg/600px-Example_image.svg.png", alt: 'First Slide'}
+                    .carousel-item
+                        %img.d-block.w-100{src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Temporary_plate.svg/601px-Temporary_plate.svg.png", alt: 'Second Slide'}
+                    .carousel-item
+                        %img.d-block.w-100{src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Temporary_plate.svg/601px-Temporary_plate.svg.png", alt: 'Third Slide'}
+            
+                %a.carousel-control-prev{role: "button", data: { bs: {target: "#carouselExampleAutoplaying", slide: "prev"}} }
+                    %span.carousel-control-prev-icon{aria: {hidden: "true"}}
+                    %span.visually-hidden Previous
+                %a.carousel-control-next{role: "button", data: { bs: {target: "#carouselExampleAutoplaying", slide: "next"}} }
+                    %span.carousel-control-next-icon{aria: {hidden: "true"}}
+                    %span.visually-hidden Next
+            
             %p Geophysical surveys provide a less expensive solution to projects which normally would involve costly excavation or drilling activities. 
             %p Geophysical measurements provide a basis for projecting cultural and geological observations into the underground.
             %p Geophysical methods are nondestructive, and relatively unobtrusive. 

@@ -14,10 +14,26 @@
 // const images = require.context('./images', true)
 // const imagePath = (name) => images(name, true)
 
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//= require bootstrap
+//= require bootstrap-sprockets
+//= require_tree
+
+import 'jquery'
 import 'bootstrap'
+// import '../stylesheets/application.scss'
 import { autosize } from 'autosize'
 
 document.addEventListener("turbolinks:load", () => {
   $('[data-toggle="tooltip"]').tooltip()
   $('[data-toggle="popover"]').popover()
+})
+
+const myCarouselElement = document.querySelector('#carouselExampleAutoplaying')
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  touch: false
 })
