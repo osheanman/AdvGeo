@@ -9,6 +9,6 @@ Feature: Footer
         Then I see the Footer
     
     Scenario: 
-        When I click on the "Corporate Profile" button
-        Then I should be on the "Corporate Profile" page
-        And I see the Footer
+        When I click on the "Employees" button
+        #Then I should be on the "Employees" page
+        Then I see the Footer

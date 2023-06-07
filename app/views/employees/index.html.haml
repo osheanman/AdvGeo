@@ -8,8 +8,11 @@
                     %tr
                         %th Name
                         %th Title
+                        %th Link
                 %tbody
                     - @employees.each do |employee|
                         %tr
                             %td= employee.name
                             %td= employee.title
+                            %td
+                                = link_to "View", employee_path(employee.id)

@@ -7,7 +7,7 @@ module ApplicationHelper
             },
             {
                 title: 'Employees',
-                link:  Rails.application.routes.url_helpers.employees_index_path
+                link:  Rails.application.routes.url_helpers.employees_path
             }
         ]
     end

@@ -326,7 +326,7 @@ DEPENDENCIES
   rails (~> 7.0.4, >= 7.0.4.3)
   rspec-rails (~> 6.0.0)
   selenium-webdriver
-  shakapacker (= 6.6)
+  shakapacker (~> 6.6)
   sprockets-rails
   sqlite3 (~> 1.4)
   tzinfo-data

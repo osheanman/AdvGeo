@@ -70,7 +70,6 @@ group :test do
 
 end
 
-gem "shakapacker", "= 6.6"
 
 gem "haml", "~> 6.1"
 
@@ -81,3 +80,5 @@ gem "bootstrap", "~> 5.2"
 gem "bootswatch", github: "thomaspark/bootswatch"
 
 gem "jquery-rails", "~> 4.5"
+
+gem "shakapacker", "~> 6.6"

@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   get 'homepage/show'
-  get 'employees/index'
-  get 'employees/show'
+  resources :employees, only: %i[index show]
 
   root "homepage#show"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

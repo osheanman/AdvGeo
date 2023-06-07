@@ -3,7 +3,7 @@ Given('I go to the homepage') do
   end
   
 Then('I should see the Navbar') do
-    expect(page).to have_content "#Navbar"
+    expect(page).to have_selector "#navbar"
 end
   
 When('I click on the Logo') do
@@ -11,11 +11,11 @@ When('I click on the Logo') do
 end
   
 Then('I should be on the homepage') do
-    pending # Write code here that turns the phrase above into concrete actions
+    expect(page).to have_current_path('/')
 end
   
 When('I click on the {string} button') do |string|
-    click_button string
+    click_on string
 end
   
 Then('I should be on the {string} page') do |string|
