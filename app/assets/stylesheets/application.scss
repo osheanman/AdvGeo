@@ -13,12 +13,7 @@
  */
 
  /* Current Bootswatch Theme: Pulse */
+ 
 @import "pulse/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "pulse/bootswatch";
-
-body {
-    background-color: #fff;
-    color: #333;
-    padding: 33px;
-  }

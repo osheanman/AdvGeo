@@ -1,0 +1,2 @@
+class GeophysicalMethod < ApplicationRecord
+end
