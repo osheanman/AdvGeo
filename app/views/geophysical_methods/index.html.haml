@@ -1,2 +1,19 @@
-%h1 GeophysicalMethods#index
-%p Find me in app/views/geophysical_methods/index.html.haml
+.row
+    .col-12.col-md-10.offset-md-1
+        %h1.text-center Geophysical Methods
+        %p Sample Text: 
+        %p.text-danger Our experience includes a large variety of geophysical methods and techniques for ground based investigations as well as the use of airborne, marine, and borehole platforms.
+
+        .table-responsive-md
+            %table.table.table-striped.table-hover#geophysical-methods
+                %caption Table of Geophysical Methods
+                %thead.thead-dark
+                    %tr
+                        %th Name
+                        %th 
+                %tbody
+                    - @geophysical_methods.each do |geophysical_method|
+                        %tr
+                            %td= geophysical_method.name
+                            %td
+                                = link_to "View", geophysical_method_path(geophysical_method.id)

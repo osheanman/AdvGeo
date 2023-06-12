@@ -1,6 +1,8 @@
 .row
     .col-12.col-md-10.offset-md-1
         %h1.text-center Employees
+        %p Sample Text: 
+        %p.text-danger Innovation, quality, detail, and flexibility are hallmarks of HGI’s service.  These trademarks are afforded to us by our employees and their commitment to the field of geophysics and its expanding applications.  At hydroGEOPHYSICS, we come to work every day because we are passionate about our work.  Our staff is critical to meeting the unique needs of our diverse client base and maintaining the state-of-the art data acquisition, processing, engineering, and reporting that makes HGI the #1 choice of our clients again and again.
         .table-responsive-md
             %table.table.table-striped.table-hover#employees
                 %caption Table of Employees
@@ -8,7 +10,7 @@
                     %tr
                         %th Name
                         %th Title
-                        %th Link
+                        %th 
                 %tbody
                     - @employees.each do |employee|
                         %tr

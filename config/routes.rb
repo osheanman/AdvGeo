@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'homepage/show'
+  get 'contact', to: 'contact#show'
   resources :employees, only: %i[index show]
   resources :geophysical_methods, only: %i[index show]
 

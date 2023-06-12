@@ -1,6 +1,6 @@
 class GeophysicalMethodsController < ApplicationController
   def index
-      @geophysical_methods = GeophysicalMethod.all
+    @geophysical_methods = GeophysicalMethod.all
   end
 
   def show

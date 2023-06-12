@@ -1,13 +1,13 @@
-
-.row.mt-2
-    .col-12.col-md-6.col-xl-4
+.row
+    .col-12.col-md-10.offset-md-1
         %h1= @employee.name
-        %table{style: {border: 'none', background: {color: 'transparent'}, align: 'left', border: '0', width: '100%'}}
+        %table{style: {border: 'none', background: {color: 'transparent'}, align: 'left', border: '0'}}
             %tbody
                 %tr
-                    %td{style: {border: 'none', background: {color: 'transparent'}, align: 'left', valign: 'top', width: '50%'}}
-                        = image_tag('HSAMT1.jpg', size: "320")
-                    %td{valign:'top'}
+                    %td{align: 'left', width: '25%'}
+                        = image_tag(@employee.photo) 
+                        - # employee photo tag path
+                    %td{valign:'top', width: '75%'}
                         %h3 Title: 
                         %p= @employee.title
                         %h3 Description: 

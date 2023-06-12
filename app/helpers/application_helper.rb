@@ -10,8 +10,12 @@ module ApplicationHelper
                 link:  Rails.application.routes.url_helpers.employees_path
             },
             {
-                title: 'Geophysical-Methods',
+                title: 'Geophysical Methods',
                 link:  Rails.application.routes.url_helpers.geophysical_methods_path
+            },
+            {
+                title: 'Contact Us',
+                link:  Rails.application.routes.url_helpers.contact_path
             }
         ]
     end

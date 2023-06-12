@@ -1,2 +1,5 @@
-%h1 GeophysicalMethods#show
-%p Find me in app/views/geophysical_methods/show.html.haml
+%h1.text-center
+    = @geophysical_method.name
+= image_tag(@geophysical_method.photo)
+%h3 Description: 
+%p= @geophysical_method.description
