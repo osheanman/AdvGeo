@@ -1,5 +1,7 @@
-%h1.text-center
-    = @geophysical_method.name
-= image_tag(@geophysical_method.photo)
-%h3 Description: 
-%p= @geophysical_method.description
+.row
+    .col-12        
+        %h1.text-center
+            = @geophysical_method.name
+        = image_tag(@geophysical_method.photo, class: 'd-block w-100')
+        %h3.m-2 Description: 
+        %p.m-2= @geophysical_method.description
